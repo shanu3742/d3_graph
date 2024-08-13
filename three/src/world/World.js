@@ -24,7 +24,12 @@ class World {
         this.#scene.add(this.#cube, this.#light);
 
         // this.#container.append(this.#renderer.domElement);
-        const resizer = new Resizer(this.#container,this.#camera,this.#renderer)
+        const resizer = new Resizer(this.#container,this.#camera,this.#renderer);
+
+
+        resizer.onResize = () => {
+            this.rendrer()
+        }
     }
     rendrer(){
         this.#renderer.render(this.#scene,this.#camera)

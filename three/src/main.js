@@ -40,14 +40,6 @@ const createWorld = () => {
 createWorld();
 
 
-window.addEventListener('resize',() => {
-    createWorld()
-})
-
-
-
-
-
 }
 
 main()

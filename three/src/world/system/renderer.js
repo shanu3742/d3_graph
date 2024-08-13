@@ -4,6 +4,10 @@ const createRendrer = (canvas) => {
 const renderer = new WebGLRenderer({
     canvas:canvas
 });
+
+// set anti-aliasing
+// renderer.physicallyCorrectLights = true;
+// renderer.antialias = true;
 return renderer
 }
 
